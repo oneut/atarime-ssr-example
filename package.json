@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "atarime": "0.0.3",
+    "atarime": "0.0.4",
     "bootstrap": "^4.3.1",
     "ejs": "^2.7.1",
     "express": "^4.17.1",
@@ -37,6 +37,9 @@
     "@types/morgan": "^1.7.37",
     "@types/nprogress": "^0.2.0",
     "@types/optimize-css-assets-webpack-plugin": "^5.0.0",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-redux": "^7.1.2",
     "@types/terser-webpack-plugin": "^1.2.1",
     "@types/webpack": "^4.39.1",
     "@types/webpack-dev-middleware": "^2.0.3",
@@ -90,11 +93,11 @@
     "build:server": "NODE_ENV=production babel --extensions '.js,.jsx,.ts,.tsx' src/server.ts --out-file build/server.js",
     "lint": "eslint --ext .js,jsx,.ts,.tsx ./src",
     "lint:fix": "eslint --fix --ext .js,jsx,.ts,.tsx ./src",
-    "server": "NODE_ENV=production node ./build/server"
+    "server": "NODE_ENV=production node ./build/server",
+    "commit": "git-cz"
   },
   "husky": {
     "hooks": {
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
       "pre-commit": "npm run lint",
       "pre-push": "npm run lint"
     }
