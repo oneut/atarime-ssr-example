@@ -1,6 +1,6 @@
 {
   "version": 2,
   "name": "atarime-ssr-example",
-  "builds": [{ "src": "build/server.js", "use": "@now/node-server" }],
+  "builds": [{ "src": "build/server.js", "use": "@now/node" }],
   "alias": "atarime-ssr-example"
 }
