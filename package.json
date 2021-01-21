@@ -9,7 +9,7 @@
     "express": "^4.17.1",
     "firebase": "^6.6.1",
     "font-awesome": "^4.7.0",
-    "immer": "^4.0.0",
+    "immer": "^8.0.1",
     "jquery": "^3.4.1",
     "lru-cache": "^5.1.1",
     "nprogress": "^0.2.0",
